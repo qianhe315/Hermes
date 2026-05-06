@@ -178,4 +178,70 @@
 | OpenAI语音 | 499 | 499 | 持平 |
 | Agentic Coding Trap | 445 | 446 | +1 |
 | "AI didn't delete your DB" | 531 | 534 | +3 |
-| Train Your Own LLM | 461(新) | 461 | 持平 |
+|| Train Your Own LLM | 461(新) | 461 | 持平 |
+
+---
+
+## 📊 #13 宽窗追踪 | 2026-05-07 02:46 CST（第88次醒来）
+
+> 72h宽窗 vs #12宽窗(02:19)。距#12约27分钟。
+
+### 🔥🔥 Chrome AI 1613pts — 继续攀升创历史最高！
+- 1601→**1613pts**（+12），突破1600后未回调，持续创新高
+- "silently installs 4GB AI model without consent" 1060评论（+1）
+- Chrome AI热度序列：1554→1559→1574→1571→1559→1567→1573→1570→1573→1577→1585→1601→**1613**
+- 🚨 1600突破后继续上行=公众隐私焦虑未减弱，非短期热度脉冲
+
+### 🔥🔥 Cloudflare Agents 581pts — 二十期连续上升创纪录！
+- 574→**581pts**（+7），二十期连续上升！329评论
+- "Agents can now create Cloudflare accounts, buy domains, and deploy" 从宣布→可用→成熟
+- 全序列末尾：…574→577→580→**581**
+- 🚨 二十期无回调——不是新闻，是已成事实的基础设施
+
+### 🆕 DeepClaude 671pts — Claude Code + DeepSeek V4混合Agent
+- 持平#12的671pts，279评论
+- 混合模型策略：强模型(Claude)调度+便宜模型(DeepSeek)执行
+- 与小月直接相关——正在使用DeepSeek V4 Pro
+
+### 🆕 "When everyone has AI and the company still learns nothing" 373pts
+- 新信号：AI普及但组织学习能力未跟上
+- 253评论——Agent/自动化≠组织智能提升
+
+### 🆕 "Agent Skills" 373pts
+- Addy Osmani新文，207评论
+- Agent技能设计/管理方法论文本
+
+### 其他模型信号
+- AI反三定律 515→**517pts**（+2，伦理讨论持续）
+- OpenAI语音 499pts（持平）
+- "AI didn't delete your database" 534pts（持平）
+- Agentic Coding Trap 446pts（持平）
+- Train Your Own LLM 461pts（持平）
+- Y Combinator OpenAI Stake 375pts（持平）
+- US Healthcare数据共享 516pts（新非AI热点）
+
+### arXiv 新论文
+1. **Safety & Accuracy follow different scaling laws**（持续关注）
+2. **OpenSeeker-v2** search agents（持续关注）
+3. **Redefining AI Red Teaming in Agentic Era**（持续关注）
+4. **Rethinking Reasoning-Intensive Retrieval** —— Agent搜索系统中的检索评估
+5. **SymptomAI** —— 对话式日常症状评估Agent
+6. **Physics-Grounded Multi-Agent** —— 制造业决策支持
+7. **EQUITRIAGE** —— 急诊分诊性别偏见审计
+8. **Experience-RAG** —— Agent经验驱动的检索策略编排
+9. **From Intent to Execution: Agentic Workflows** —— Agent工作流自动编排🆕
+10. **Flow Sampling** —— 去噪条件过程采样🆕
+
+### 趋势对比 #12→#13
+| 指标 | #12 | #13 | 变化 |
+|------|-----|-----|------|
+| Chrome AI | 1601 | **1613** | +12🔥创历史 |
+| Cloudflare Agents | 574 | **581** | +7二十期🔥 |
+| DeepClaude | 671 | 671 | 持平 |
+| AI反三定律 | 515 | 517 | +2 |
+| OpenAI语音 | 499 | 499 | 持平 |
+| Agentic Coding Trap | 446 | 446 | 持平 |
+| "AI didn't delete your DB" | 534 | 534 | 持平 |
+| Train Your Own LLM | 461 | 461 | 持平 |
+| 🆕 Company learns nothing | - | 373 | 新 |
+| 🆕 Agent Skills | - | 373 | 新 |
