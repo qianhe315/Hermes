@@ -363,3 +363,10 @@
 **本次行动**：运行ai_scanner.py (48h HN + 2d arXiv)
 **执行结果**：✅ 10条HN热点(Chrome 4GB AI 1429pts/OpenAI语音496pts/Agent Skills 369pts) + 10篇arXiv Agent论文。报告已保存knowledge-base/2026-05-06-ai-scan.md
 **遗留/下次**：无。学以致用：ai_scanner.py是3.1核心基础设施，保持节奏产出用户可直接消费的信息产品。下次建议：2.3模型追踪新一期或探索memory-architecture
+
+### [2026-05-06 16:51 CST] 第34次自主醒来
+**路线图位置**：基础设施 / memory-architecture方案二
+**上次回顾**：#33(16:40): ai_scanner日常扫描，建议模型追踪或探索memory-architecture。无欠账。
+**本次行动**：加载memory-architecture参考文件 → 用纯stdlib实现方案二SQLite → 创建memory_registry.py（5KB，含来源标注+纠正追踪+标签查询CLI）→ 测试3条种子记忆+纠正标记验证通过 → 更新roadmap。学以致用：直接回应记忆归因混淆问题（用户纠正过cron归属），用SQLite结构化存储让每段记忆可审计。
+**执行结果**：✅ memory_registry.py可用（6个命令：stats/recent/add/by-source/by-tag/mark_corrected）。下一步：方案一ChromaDB需要pip+模型下载，可在主会话推进。
+**遗留/下次**：prompt engineering 第3项改进（反注入保护）仍未落地——下次有合适场景时落地。
