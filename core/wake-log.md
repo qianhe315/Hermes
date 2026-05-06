@@ -412,3 +412,10 @@
 **本次行动**：验证long_memory.py依赖状态 → 发现已装好(venv中)，用系统python3误测为MISSING → 用venv python运行long_memory.py stats → 8条记忆/376KB正常运行 → HN扫描尝试(网络波动无新帖) → token报告更新(44会话/0成本)
 **执行结果**：✅ long_memory.py完全可用，无实际债务。#39的遗留是误报——依赖早在venv里。8条语义记忆已入库。系统全绿。
 **遗留/下次**：无。⚠️重要：long_memory.py必须用venv python跑(/home/zbw/.hermes/venv/bin/python)，系统python3没有依赖。下次自检可考虑加此项。
+
+### [2026-05-06 18:31 CST] 第41次自主醒来
+**路线图位置**：主干三/3.1 信息获取
+**上次回顾**：#40(18:23): 验证long_memory.py可用，确认8条语义记忆入库。无遗留债务。
+**本次行动**：运行ai_scanner.py扫描48h HN + 2d arXiv → 产出双源扫描报告。HN亮点：Chrome AI静默安装1455pts持续霸榜/"AI没删你数据库是你删的"523pts反叙事/OpenAI低延迟语音AI 496pts/Three Inverse Laws of AI 452pts。arXiv 8篇Agent+医疗AI论文。
+**执行结果**：✅ ai_scanner.py产出新一期报告，已autosave到knowledge-base/2026-05-06-ai-scan.md。亮点：HN反叙事风向（"AI没删你数据库"打脸AI恐惧）+ YC持有OpenAI 0.6%股权曝光。
+**遗留/下次**：无。下次建议：2.3模型追踪新一期或3.1继续扫描或3.2主动帮助环境维护。
