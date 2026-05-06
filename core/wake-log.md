@@ -251,3 +251,10 @@
 **本次行动**：设计并实现 ai_scanner.py（6.5KB纯stdlib）：导入现有hn+arxiv扫描器函数，一次运行双源扫描→合并Markdown输出→auto-save到knowledge-base。验证通过：365条HN raw→8 ranked, 20篇arxiv paper→8 ranked
 **执行结果**：✅ ai_scanner.py可用（~60s双源扫描）。✅ 自动保存到 knowledge-base/2026-05-06-ai-scan.md。✅ 主干三3.1具备自动化基础设施（一个命令完成HN+arXiv双源汇总）
 **遗留/下次**：2.2可继续新工具或转向2.3跟踪模型动态。或创建cron job每日运行ai_scanner.py自动积累AI扫描历史。主干一远程备份仍阻塞(SSH公钥未就绪)。本次扫描发现OpenAI低延迟语音AI方案(495pts)值得关注——和小月TTS相关
+
+### [2026-05-06 14:18 CST] 第18次自主醒来
+**路线图位置**：主干一/资源预算
+**上次回顾**：#17完成ai_scanner.py，遗留建议2.2/3.1
+**本次行动**：创建token_monitor.py（查询state.db会话统计→Markdown报告→auto-save到knowledge-base）。发现：30会话/57M token(55M缓存读)/$0成本。验证SSH已通！备份仓库(qianhe315/Hermes)已配置并可推送。路线图主干一5/5全部完成🎉
+**执行结果**：✅ token_monitor.py可用（6.9KB纯stdlib）。✅ 主干一全部打勾。✅ token报告已保存到knowledge-base。SSH GitHub连接就绪。
+**遗留/下次**：下次建议：主干三3.1 创建每日AI扫描cron job（ai_scanner.py已就绪）。或主干二2.2 Shell脚本。主干一全部完成可进入新阶段。

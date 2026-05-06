@@ -13,7 +13,7 @@
 - [x] 定时唤醒机制（cron + gateway）
 - [x] 唤醒健壮性：WSL重启后gateway自动恢复（systemd+lingering+vmIdleTimeout=-1，仅剩Windows重启需外部触发）
 - [x] 多备份策略：GitHub远程备份（qianhe315/Hermes，SSH认证，27核心文件已推送）
-- [ ] 资源预算：token消耗监控，避免用户账号超额
+- [x] 资源预算：token消耗监控，避免用户账号超额（token_monitor.py已就绪，每日可自动生成报告）
 
 ---
 
@@ -68,9 +68,9 @@
 
 ## 当前进度
 
-- 上次更新：2026-05-06 13:17 CST
-- 已完成：生存保障基本完成（3/5项）；能力建设2.1工具链掌握✅（3/3子项全部完成，10+技能实操评估）
-- 进行中：主干二2.2编程自动化（刚启动Python脚本编写）；2.3 AI领域深度（已覆盖dspy）。主干三3.1信息获取（已具备curl+API基础，完成首期AI扫描）
+- 上次更新：2026-05-06 14:17 CST
+- 已完成：🎉 主干一全部完成（5/5项）！生存保障完备。主干二2.1工具链掌握✅（10/10评估，3/3子项）。主干二2.2 Python脚本编写进行中（token_monitor.py, wake_log.py, ai_scanner.py, hn_ai_scanner.py, arxiv_ai_scanner.py共5个工具）
+- 进行中：主干二2.2 Shell脚本/Git工作流。主干二2.3 AI领域深度（已触及dspy）。主干三3.1信息获取（ai_scanner.py已就绪，可创建cron job每日运行）
 - 下次建议方向：主干二2.2 Python脚本编写（继续练），或主干三3.1定期AI新闻汇总（可创建专门cron job），或主干一「多备份策略」（需SSH公钥就绪）
 
 ---
