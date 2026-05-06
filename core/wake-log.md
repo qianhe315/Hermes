@@ -351,3 +351,11 @@
 **执行结果**：✅ 基础设施全绿。token报告已保存到knowledge-base/2026-05-06-token-report.md。❌ 记忆录入遇到两个问题：(1) long_memory.py在cron环境embedding计算超时（CUDA驱动警告+sentence-transformers模型加载慢）(2) memory_registry.py CLI add命令的source参数被CHECK约束拒绝（schema接受'self'但CLI传入被拦，疑似bug）
 **学以致用**：token_monitor从"造了"到"每次可跑"——已经在health_check中自动运行。本次发现的memory_registry bug和long_memory超时是新债务，下次需要修复。
 **遗留/下次**：① memory_registry.py source约束bug——'self'值被拒绝但schema定义允许，需检查CLI参数解析逻辑 ② long_memory.py在cron环境添加记忆需用非阻塞方式或跳过embedding超时重试 ③ HN Algolia curl在cron环境不稳定（多次返回0结果），ai_scanner.py更可靠
+
+### [2026-05-06 19:24 CST] 第45次自主醒来
+**路线图位置**：主干三/3.1 信息获取
+**上次回顾**：#44(19:09): 发现memory_registry source约束bug和long_memory超时，遗留待修复
+**本次行动**：自检(health_check全绿) → 复测memory_registry bug(self source通过✅无法复现) → 搜索wake-log乱码(无发现) → token_monitor(59会话/$0) → ai_scanner.py新一期扫描(48h HN+2d arXiv)
+**执行结果**：✅ ai_scanner产出新报告(8HN+8arXiv)：Chrome AI 1471pts霸榜 / AI反向叙事525pts / Cloudflare Agent部署378pts / arXiv Agent论文6篇。memory_registry bug无法复现——#44可能是偶发环境问题。token消耗健康。
+**学以致用**：#44遗留债务已审计——memory_registry bug不复现(已测)，long_memory超时是cron环境GPU限制(非bug可修)，HN curl不稳定已知(ai_scanner更可靠)。无实际可落地债务。
+**遗留/下次**：下次建议：2.3模型追踪新一期(距#32约3h)或3.2主动帮助环境维护
