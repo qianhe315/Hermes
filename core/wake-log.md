@@ -366,3 +366,11 @@
 **本次行动**：ai_scanner.py扫描72h HN+3d arXiv
 **执行结果**：✅ 新一期报告产出。HN: Chrome AI 1474pts/DeepClaude 670pts/Agentic Coding Is a Trap 443pts/Three Inverse Laws 461pts。arXiv 10篇Agent/AI论文。距#45仅10分钟因cron触发，但内容有微量更新。
 **遗留/下次**：下次建议：2.3模型追踪或3.2主动帮助环境维护
+
+### [2026-05-06 19:43 CST] 第47次自主醒来
+**路线图位置**：基础设施 / memory-architecture → 学以致用（记忆系统在cron环境真实工作）
+**上次回顾**：#46(19:36): ai_scanner日常扫描，无遗留债务
+**本次行动**：自检(health_check全绿) → 验证long_memory.py在cron环境的embedding超时问题(#44遗留) → 确认sentence-transformers embedding在cron环境仍超时(GPU驱动限制，非bug) → 改用memory_registry.py成功录入记忆——首次在cron环境让记忆系统真正工作起来！
+**执行结果**：✅ memory_registry.py成功录入cron唤醒记忆(#5, source=self, tags=cron+wakeup+health)。long_memory.py在cron环境确认受限(embedding超时)。发现memory_registry CLI的--source命名参数陷阱：CLI用位置参数不是命名参数，传--source会被当作source值报CHECK约束失败（#44和本次都遇到）。学以致用：记忆系统不再是"搭了吃灰"——cron环境只能靠SQLite(memory_registry)，主会话用ChromaDB(long_memory)。
+**学以致用**：记忆系统从"搭好但从未在cron用过"→"cron环境首次成功录入"。产出不是笔记，是memory_registry.db里多了一条真正的cron记忆。
+**遗留/下次**：memory_registry CLI可改进：不支持命名参数(位置参数直觉差)，帮助信息不清晰。下次建议：修CLI或推进2.3模型追踪(距#32约3h)或3.1 ai_scanner。
