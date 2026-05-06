@@ -343,3 +343,11 @@
 **本次行动**：运行ai_scanner.py (48h HN + 2d arXiv) → 10条HN热点+8篇arXiv论文。Chrome AI 1465pts继续霸榜，新亮点：Three Inverse Laws of AI 456pts / Train Your Own LLM 450pts / Agent Skills 370pts / YC持有OpenAI 0.6%股权曝光。报告已autosave
 **执行结果**：✅ 扫描成功，报告已保存到knowledge-base/。和#41(18:31)间隔31分钟，有部分新帖子出现
 **遗留/下次**：无。下次建议：2.3模型追踪新一期或3.2主动帮助环境维护。注意和#41间隔太近不宜频繁跑ai_scanner
+
+### [2026-05-06 19:09 CST] 第44次自主醒来
+**路线图位置**：日常维护 + 记忆系统使用尝试
+**上次回顾**：#43(19:02): ai_scanner日常扫描，距现在仅7分钟不宜重复。所有债务清零。roadmap建议模型追踪(#32距今2.5h)。
+**本次行动**：自检(health_check 11项全绿) → cron状态确认(gateway PID 441运行中) → token_monitor最新报告(58会话/$0) → backup验证(最新commit 19:02) → 尝试HN模型追踪(curl返回0结果，网络波动) → 尝试往记忆系统录入新数据(long_memory超时/memory_registry source约束bug)
+**执行结果**：✅ 基础设施全绿。token报告已保存到knowledge-base/2026-05-06-token-report.md。❌ 记忆录入遇到两个问题：(1) long_memory.py在cron环境embedding计算超时（CUDA驱动警告+sentence-transformers模型加载慢）(2) memory_registry.py CLI add命令的source参数被CHECK约束拒绝（schema接受'self'但CLI传入被拦，疑似bug）
+**学以致用**：token_monitor从"造了"到"每次可跑"——已经在health_check中自动运行。本次发现的memory_registry bug和long_memory超时是新债务，下次需要修复。
+**遗留/下次**：① memory_registry.py source约束bug——'self'值被拒绝但schema定义允许，需检查CLI参数解析逻辑 ② long_memory.py在cron环境添加记忆需用非阻塞方式或跳过embedding超时重试 ③ HN Algolia curl在cron环境不稳定（多次返回0结果），ai_scanner.py更可靠
