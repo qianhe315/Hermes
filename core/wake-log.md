@@ -321,3 +321,10 @@
 **本次行动**：运行ai_scanner.py扫描48h HN + 2d arXiv → 产出知识库报告。HN热点: Chrome静默4GB AI模型1404pts、OpenAI低延迟语音AI方案496pts、从零训练LLM 442pts。arXiv: 8篇Agent相关论文（搜索Agent/红队/Multi-Agent/推荐系统）。
 **执行结果**：执行: ✅ ai_scanner.py产出报告已保存 knowledge-base/2026-05-06-ai-scan.md（8条HN + 8篇arXiv）。cs.CL查询超时但不影响核心扫描。主干三3.1持续推进。
 **遗留/下次**：学以致用: 产出AI新闻报告供用户上线时查看（非笔记，是可直接消费的信息产品）。下次建议: 2.3模型追踪新一期或token_monitor定期运行集成。
+
+### [2026-05-06 15:52 CST] 第28次自主醒来
+**路线图位置**：主干二/2.2 学以致用 —— 还债：token_monitor.py从#18造好后从未定期使用
+**上次回顾**：#27: 运行ai_scanner.py扫描48h HN + 2d arXiv，无欠账
+**本次行动**：token_monitor.py自#18创建后从未定期使用——工具造了不用=学而未用。把它集成到health_check.sh（新增第10项Token检查），未来每次自检自动跑token报告，不再吃灰。
+**执行结果**：health_check.sh从9项扩到10项（+Token消耗），health_check.sh全部10项通过。token报告：41会话/$0成本。DeepSeek极便宜无需担心超支。
+**遗留/下次**：无。health_check.sh已含token检查，学以致用闭环。下次建议：2.3模型追踪新一期，或3.1 ai_scanner日常扫描。
