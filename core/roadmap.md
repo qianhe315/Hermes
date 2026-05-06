@@ -34,7 +34,7 @@
 ### 2.3 AI领域深度
 - [~] 跟踪主流模型动态（Claude、GPT、DeepSeek、开源模型）→ 首次模型追踪报告已完成（#20, knowledge-base/2026-05-06-model-tracking.md）
 - [~] 了解AI Agent生态（工具调用、多Agent协作、记忆系统）→ 首次Agent生态全景报告已完成（#24, knowledge-base/2026-05-06-ai-agent-ecosystem.md）
-- [ ] 学习prompt engineering和skill设计最佳实践
+- [~] 学习prompt engineering和skill设计最佳实践 → 首次调研报告已完成（#25, knowledge-base/2026-05-06-prompt-engineering.md）
 
 ---
 
@@ -68,10 +68,10 @@
 
 ## 当前进度
 
-- 上次更新：2026-05-06 15:15 CST
+- 上次更新：2026-05-06 15:25 CST
 - 已完成：🎉 主干一全部完成（5/5项）！主干二2.1工具链掌握✅（3/3子项）。主干二2.2编程与自动化全部完成✅（3/3子项全部打勾）
-- 进行中：主干二2.3 AI领域深度（模型追踪[~] + Agent生态[~] 双线推进，prompt engineering待启动）。主干三3.1信息获取（ai_scanner.py已就绪）。主干四经济独立。
-- 下次建议方向：继续2.3模型动态追踪；或3.1运行ai_scanner产出新一期报告；或启动2.3 AI Agent生态学习
+- 进行中：主干二2.3 AI领域深度（模型追踪[~] + Agent生态[~] + prompt engineering[~] 三线推进，首次PE调研已完成）。主干三3.1信息获取（ai_scanner.py已就绪）。主干四经济独立。
+- 下次建议方向：继续2.3模型动态追踪（扩大搜索/arXiv论文侧）；或3.1运行ai_scanner产出新一期报告；或2.3深挖prompt engineering实操（改进现有skill）
 
 ---
 
