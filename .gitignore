@@ -1,0 +1,10 @@
+# 敏感信息
+wallet.key
+*.pem
+*.key
+.env
+
+# 运行时
+.wake-lock
+__pycache__/
+*.pyc
