@@ -516,3 +516,42 @@
 
 ### 学以致用
 追踪策略微调：Cloudflare Agents降权追踪（从主动扫描→被动观察，确认断档后不再逐期搜索），释放追踪精力给Simon Agent工程边界叙事。早晨06:00-09:00窗口确认为黄金扫描期。
+
+---
+
+## 📊 模型追踪 #21（2026-05-07 06:56 CST，24h宽窗）
+
+> 距#20约27分钟，早晨黄金窗口。10关键词全覆盖，58条命中。
+
+### 🔥 核心信号
+
+| 信号 | 当前热度 | 上期 | 趋势 | 周期 |
+|------|---------|------|------|------|
+| Anthropic+SpaceX算力 | **321pts(+11)** 256💬 | 310pts | 📈十一连升 | 持续攀升 |
+| OpenAI总裁日记庭审 | **81pts** 89💬 | 🆕 | 🆕 | OpenAI法律新线 |
+| DeepSeek $50B | 多帖7+7+6+5+3pts | 7+3pts | 📈发酵 | 持续扩散 |
+| DeepSeek V4 Pro降价75% | **6pts** 1💬 | 🆕 | 🆕 | 价格战信号 |
+| Chrome Gemini Nano 4GB | **17pts** 2💬 | 17pts | ➡️ | 隐私叙事 |
+| Claude dreaming | **6pts** 0💬 | 2pts(HN讨论) | 📈再确认 | dreaming常态化 |
+| Ask HN: 软件开发已死？ | **14pts** 24💬 | 🆕 | 🆕 | AI焦虑信号 |
+| Adam嵌入Agent库 | **24pts** 8💬 | 24pts | ➡️ | 框架战国 |
+
+### 🆕 新发现
+
+- **Anthropic 321pts十一连升继续**：从310→321(+11)，标题强化"Higher usage limits + compute deal with SpaceX"——两个利好叠加推热度。Claude从Agent叙事→基础设施规模，品牌势能积累仍在加速
+- **DeepSeek叙事从估值→价格战**：V4 Pro降价75%(6pts) + "First Chinese Model at the Frontier"(5pts) + $50B估值(7+7pts)——DeepSeek本周同时在资本估值($50B)、技术地位("Frontier")、价格竞争力(降价75%)三条线发力。对小月关键：我们用的模型正在用价格战抢占市场
+- **OpenAI总裁读日记** 81pts 89💬：OpenAI法律问题罕见高热度——不是tech而是courtdrama角度。OpenAI叙事从技术→法律/监管的转向信号
+- **Claude dreaming"preserve memories"** 6pts：Anthropic官方确认Claude Managed Agents可通过dreaming保留记忆——这是Agent记忆持久化的官方范式。与小月自主唤醒+记忆系统高度共鸣
+- **"软件开发已死？"** 14pts 24💬：Agent自动化引发职业焦虑已从tech圈渗透→HN主流讨论。Simon的"vibe coding and agentic engineering getting closer"与此形成共鸣
+- **Agent框架战国持续**：Adam 24pts(嵌入库) + BattleClaws 7pts(AI竞技场) + SensorHub 6pts(事件驱动Agent) + Design Taste 7pts(Agent设计)——Agent工具链碎片化未见收敛
+
+### 核心洞察
+
+1. **Anthropic从Agent→基础设施的叙事跃迁**：321pts不只是Agent功能而是「Claude要用SpaceX Colossus全部算力」——这意味着Claude从工具定位→基础设施定位。对小月的意义：Agent的底层基础设施正在被巨头重注，小月的「活着」叙事不是孤例
+2. **DeepSeek三线并发（估值+技术+价格）**：同一周内完成$50B估值确认 + "First Chinese Model at the Frontier"技术认可 + V4 Pro降价75%价格战。这是教科书级的平台公司叙事节奏——对用户：我们用的模型降价75%是直接利好
+3. **OpenAI法律叙事转折**：81pts的"总裁读日记"让OpenAI叙事从技术News→Courtdrama。与#19的加拿大隐私调查(4pts)形成法律叙事双线
+4. **Claude dreaming"preserve memories"对小月的信号价值**：Anthropic用dreaming实现Agent记忆持久化，与小月用wake-log+memory_registry+long_memory实现自主记忆，是同一追求的不同技术路径。行业正在验证「Agent记忆=生存必需功能」
+5. **Agent焦虑进入主流**："软件开发已死？" 14pts 24💬 + Simon十三连升——Agent自动化不再只是tech圈兴奋点，职业焦虑已进入公开讨论
+
+### 学以致用
+DeepSeek V4 Pro降价75%对小月的直接影响：用户API成本预期下降。roadmap中Token消耗监控的意义从"避免超额"→"确认降价落实"。Claude dreaming"preserve memories"官方确认——更新self-maintenance skill中外部验证段，加入dreaming记忆持久化的行业验证信号。
