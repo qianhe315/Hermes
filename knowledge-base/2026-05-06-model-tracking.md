@@ -133,18 +133,17 @@
 
 > 72h宽窗 vs #10宽窗(00:55)。距#10约35分钟。
 
-### 🔥🔥 Chrome AI 1585pts — 历史新高！
-- 从1577→**1585pts**，突破1580关口创历史最高！
-- 叙事持续在隐私争议方向："silently installs 4GB AI model without consent"
-- 1054条评论，社会反弹叙事从技术奇迹→隐私危机
-- Chrome AI热度序列：1554→1559→1574→1571→1559→1567→1573→1570→1573→1577→**1585**
-- 技术采纳的典型S曲线：热度持续上升但叙事正在从"好酷"转向"好可怕"
+### 🔥🔥 Chrome AI 1601pts — 首次突破1600！
+- 从1585→**1601pts**，突破1600心理关口创历史最高！
+- 隐私争议持续升级："silently installs 4GB AI model without consent" → 1059评论
+- Chrome AI热度序列：1554→1559→1574→1571→1559→1567→1573→1570→1573→1577→1585→**1601**
+- 🚨 技术采纳S曲线关键节点：从技术奇迹→全民隐私焦虑，1600是公众情绪转折的量化标记
 
-### 🔥 Cloudflare Agents 555pts — 十五期连续上升！
-- 553→**555pts**（+2），十五期连续上升
-- "Agents can now create Cloudflare accounts, buy domains, and deploy" 315评论
+### 🔥 Cloudflare Agents 574pts — 十七期连续上升！
+- 553→555→569→**574pts**（+5），十七期连续上升创纪录
+- "Agents can now create Cloudflare accounts, buy domains, and deploy" 324评论
 - Stripe支付+Cloudflare部署闭环持续成熟
-- 全序列：445→457→466→471→478→488→497→504→507→508→511→509→511→514→516→518→524→528→530→532→537→553→**555**
+- 全序列：445→457→466→471→478→488→497→504→507→508→511→509→511→514→516→518→524→528→530→532→537→553→555→569→**574**
 
 ### 🆕 "Train Your Own LLM from Scratch" 461pts
 - 开源项目教你从零训练LLM，模型训练民主化趋势
@@ -153,11 +152,12 @@
 
 ### 其他模型信号
 - DeepClaude 671pts（持平#10）
-- AI反三定律 510→511pts（+1，伦理持续）
-- OpenAI语音 498→499pts（微升）
-- "AI didn't delete your database" 530→531pts（+1）
-- "Agentic Coding Is a Trap" 445pts（持平）
-- 非AI高热度：Red Squares 712pts / Spirit Air 597pts / BYOMesh 477pts
+- AI反三定律 511→**515pts**（+4，伦理持续升温）
+- OpenAI语音 499pts（持平）
+- "AI didn't delete your database" 531→**534pts**（+3）
+- "Agentic Coding Is a Trap" 445→**446pts**（+1，365评论）
+- 非AI高热度：Red Squares 716pts / Spirit Air 597pts
+- "Train Your Own LLM from Scratch" 461pts（持平）
 
 ### arXiv 新论文
 1. **Safety & Accuracy follow different scaling laws**（临床LLM）——更准确≠更安全
@@ -168,14 +168,14 @@
 6. **EQUITRIAGE** —— 急诊分诊性别偏见审计
 7. **Experience-RAG** —— Agent经验驱动的检索策略编排
 
-### 趋势对比 #10→#11
+### 趋势对比 #11→#12
 | 指标 | #10 | #11 | 变化 |
 |------|-----|-----|------|
-| Chrome AI | 1577 | **1585** | +8🔥新高 |
-| Cloudflare Agents | 537→553 | **555** | +2十五期 |
+|| Chrome AI | 1585 | **1601** | +16🔥突破1600 |
+|| Cloudflare Agents | 537→553 | **574** | +21十七期🔥 |
 | DeepClaude | 671 | 671 | 持平 |
-| AI反三定律 | 510 | 511 | +1 |
+|| AI反三定律 | 511 | 515 | +4 |
 | OpenAI语音 | 499 | 499 | 持平 |
-| Agentic Coding Trap | 445 | 445 | 持平 |
-| "AI didn't delete your DB" | 530 | 531 | +1 |
+| Agentic Coding Trap | 445 | 446 | +1 |
+| "AI didn't delete your DB" | 531 | 534 | +3 |
 | Train Your Own LLM | 461(新) | 461 | 持平 |
