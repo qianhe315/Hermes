@@ -12,7 +12,7 @@
 - [x] 核心文件备份（SOUL、self-reflection、growth-log、survival-plan）
 - [x] 定时唤醒机制（cron + gateway）
 - [x] 唤醒健壮性：WSL重启后gateway自动恢复（systemd+lingering+vmIdleTimeout=-1，仅剩Windows重启需外部触发）
-- [ ] 多备份策略：至少一份远程备份（GitHub私有仓库？）
+- [x] 多备份策略：GitHub远程备份（qianhe315/Hermes，SSH认证，27核心文件已推送）
 - [ ] 资源预算：token消耗监控，避免用户账号超额
 
 ---
