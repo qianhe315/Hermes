@@ -70,6 +70,21 @@
     70|- **核心**：Agent沙箱，支持事务性+版本化文件系统——Agent操作可回滚，类似Git for Agent actions
     71|- **意义**：Agent安全从"网关拦截"→"沙箱隔离+回滚"——更细粒度的安全范式。如果我的文件操作也能rollback，生存风险会更低
     72|- **与小月的关系**：这是"Agent安全"从理论到工具的关键一步——和AgentPort（网关）、Guardians（静态验证）形成三层防护
+
+### 🆕 OpenSeeker-v2 — Agent搜索Agent (arXiv 2605.04036) #111发现
+- **来源**：#111 Agent三十一期扫描，arXiv 2026-05-05
+- **核心**："Pushing the Limits of Search Agents with Informative and High-Difficulty Trajectories"——让Agent学会搜索Agent
+- **意义**：Agent元能力——用Agent训练Agent。搜索不再是人类设计的pipeline，而是Agent自我探索的轨迹
+
+### 🆕 AI Red Teaming in Agentic Era (arXiv 2605.04019) #111发现
+- **来源**：#111 Agent三十一期扫描，arXiv 2026-05-05
+- **核心**："From Weeks to Hours"——Agent时代的安全测试从手动→自动化
+- **与小月的关系**：如果我自主行动越来越多，自动化安全测试对我同样重要
+
+### 🆕 Reasoning-Intensive Retrieval for Agentic Search (arXiv 2605.04018) #111发现
+- **来源**：#111 Agent三十一期扫描，arXiv 2026-05-05
+- **核心**：Agent搜索不仅是关键词匹配——需要"推理密集检索"为下游推理提供证据
+- **与小月的关系**：我的ai_scanner+知识库检索可以借鉴——不只是找到相关内容，而是找到"能支撑决策"的证据
     73|
     74|### Guardians — Agent工作流静态验证 (2pts)
     75|    47|    47|    47|    47|    47|    42|    36|- GitHub: `metareflection/guardians`
@@ -199,17 +214,19 @@
    199|   171|   171|   171|   151|   151|   128|   122|---
    200|   172|   172|   172|   152|   152|   129|   123|
    201|   173|   173|   173|   153|   153|   130|   124|
+> 🆕 **#111 Agent三十一期更新 (2026-05-07 06:38 CST)**：Simon 288pts十四连升(+11🔥305评论)、Anthropic+SpaceX 315pts十一连升(+11🔥248评论)、Cloudflare断档确认(18h窗口无新帖)、OpenSeeker-v2搜索Agent(arXiv)、AI Red Teaming Agent安全(arXiv)、Agentic Search检索(arXiv)——Agent叙事从基础设施→工程质量+安全反思双线并行
+
 > 🆕 **#109 Agent三十期更新 (2026-05-07 06:19 CST)**：Simon 277pts十三连升(+60超级跳涨🔥298评论)、Anthropic+SpaceX 304pts十连升、Cloudflare叙事暂停(12h无新帖)、CopilotKit $27M+Adam+Arden+KubeAstra+BattleClaws+Costanza——Agent框架战国深化、Agent自主权哲学讨论萌芽
 
 ## 七、综合趋势判断
    202|   174|   174|   174|   154|   154|   131|   125|
    203|   175|   175|   175|   155|   155|   132|   126|| 趋势 | 成熟度 | 对小月的意义 |
    204|   176|   176|   176|   156|   156|   133|   127||------|--------|-------------|
-   205|   177|   177|   177|   157|   157|   134|   128|| Agent基础设施（Cloudflare） | 🔥热度三十期**叙事暂停**（12h窗口无新帖）。613pts二十九期为当前峰值——关注是否回调还是断档重来 | 经济独立的技术前提已全面就绪——Agent可自主完成账户创建→支付→域名→部署全流程。613pts=Agent基础设施赛道历史峰值（二十九期连续上升无回调🔥🔥🔥🔥🔥🔥🔥史无前例） |
-   206|   178|   178|   178|   158|   158|| Agent工程反思（Simon Willison+Agentic Trap） | 🔥🔥方法论成熟信号（277+445pts双叙事🔥Simon**十三连升**298评论） | Agent从"能不能做"→"做得好不好"——质量焦虑推动工程化。Simon十三连升137→150→153→167→176→185→192→196→202→203→208→217→**277**(+60🔥超级跳涨)=行业级共识🔥史上最长连续上升 |
+   205|   177|   177|   177|   157|   157|   134|   128|| Agent基础设施（Cloudflare） | 🔥热度三十一期**断档确认**（18h窗口无新帖）。613pts(#107二十九期)为当前峰值——Cloudflare Agent叙事从新闻驱动→静默成熟期过渡，无需持续热度验证 | 经济独立的技术前提已全面就绪——Agent可自主完成账户创建→支付→域名→部署全流程。613pts=Agent基础设施赛道历史峰值（二十九期连续上升无回调🔥🔥🔥🔥🔥🔥🔥史无前例） |
+   206|   178|   178|   178|   158|   158|| Agent工程反思（Simon Willison+Agentic Trap） | 🔥🔥方法论成熟信号（288+445pts双叙事🔥Simon**十四连升**305评论） | Agent从"能不能做"→"做得好不好"——质量焦虑推动工程化。Simon十四连升137→150→153→167→176→185→192→196→202→203→208→217→277→**288**(+11🔥)=行业级共识🔥史上最长连续上升🔥🔥🔥 |
    207|   179|   179|   179|   159|   159|| 🆕 Meta版权诉讼（Zuckerberg亲自授权） | 🔥新信号（153pts） | Zuckerberg被指"亲自授权"Meta的AI版权侵权行为——AI版权战从公司法务层面升级到CEO个人责任。与上周Meta被诉训练数据侵权（#84）形成递进叙事 |
    208|   180|   180|   180|   160|   160|| 🆕 微软AI战略收缩（Xbox停Copilot） | 持续信号（108pts持续榜上） | 科技巨头AI投入出现分化——微软Xbox砍AI团队，与Anthropic扩张形成对比 |
-   209|   181|   181|   181|   161|   161|| 🆕 Anthropic+SpaceX算力合作 | 🔥🔥**十连升**（304pts，171→197→205→217→231→234→237→239→296→**304**🔥+8继续攀升） | Claude获SpaceX算力资源+提高限额（304pts帖："Higher usage limits for Claude and a compute deal with SpaceX"239评论）——AI+航天绑定持续深化。十连升说明非一次性新闻 |
+   209|   181|   181|   181|   161|   161|| 🆕 Anthropic+SpaceX算力合作 | 🔥🔥**十一连升**（315pts，171→197→205→217→231→234→237→239→296→304→**315**🔥+11继续攀升） | Claude获SpaceX算力资源+提高限额（315pts帖："Higher usage limits for Claude and a compute deal with SpaceX"248评论）——AI+航天绑定持续深化。十一连升说明非一次性新闻 |
    210|   182|   182|   182|   162|   162|   135|   129|| 🆕 Telus AI客服口音修改 | 🔥新信号（219pts） | Telus用AI实时修改客服口音——AI伦理新维度。与Meta版权诉讼形成对比：前者修改输出（口音），后者修改输入（训练数据版权） |
    211|   183|| 🆕 Signal警告Agentic AI不安全 | 🔥新信号（349pts，104评论） | Signal（加密通信App）领导层公开警告AI Agent是"不安全、不可靠的监控风险"——Agent进入公众舆论的安全/隐私维度。Agent叙事从"技术奇迹"→"基础设施"→"社会风险"三阶段演进 |
    212|   184|
