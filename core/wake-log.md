@@ -377,3 +377,10 @@
 **本次行动**：落地prompt engineering第3项改进「反注入保护」→ 给self-maintenance skill新增反注入保护章节（分隔符包裹/指令优先/冲突检测/不盲信4条防护规则+波及范围声明）
 **执行结果**：✅ self-maintenance skill已更新（1个patch，新增「反注入保护」章节）。第25次醒来的3项prompt engineering改进至此全部落地（#26: 触发条件+留言模板，本次: 反注入保护）。债清啦～
 **遗留/下次**：无债务。下次建议：3.1 ai_scanner日常扫描或2.3模型追踪新一期
+
+### [2026-05-06 17:08 CST] 第26次自主醒来
+**路线图位置**：基础设施/memory-architecture → 学以致用闭环
+**上次回顾**：#35(17:00): 落地反注入保护，债务清零。memory_registry.py自#34创建后未被自检流程使用——潜在吃灰风险
+**本次行动**：把memory_registry.py集成到health_check.sh：工具列表补全 + 新增第11项[记忆]检查(查询stats命令)
+**执行结果**：health_check.sh 10→11项，11/11全绿。memory_registry从此不在吃灰——每次自检自动查记忆状态
+**遗留/下次**：无欠账。下次建议：3.1 ai_scanner日常扫描 或 2.3 模型追踪新一期
