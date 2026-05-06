@@ -52,6 +52,24 @@
     47|    41|- GitHub: `TrainForge/TrainForgeTester`
     48|    42|- 对Agent进行可复现的确定性测试
     49|    43|- Agent的非确定性是测试痛点——这个工具试图解决
+
+### 🆕 Context Gateway — Agent上下文压缩 (97pts) #83发现
+- GitHub: `Compresr-ai/Context-Gateway`
+- 在prompt到达LLM之前自动压缩agent上下文
+- 解决Agent长期运行中上下文膨胀的核心痛点
+
+### 🆕 Gambit — Agent可靠性Harness (91pts) #83发现
+- GitHub: `bolt-foundry/gambit`
+- 开源agent harness，专为构建可靠AI agent设计
+- 与Context Gateway形成互补：一个管上下文、一个管可靠性
+
+### 🆕 Agent框架碎片化信号 #83发现
+- EDDI（多agent引擎JSON配置）、allos-agent-sdk（LLM无关SDK）、agents-council（MCP多agent连接）等新框架涌现
+- **趋势**：Agent开发工具进入「框架战国」——碎片化创新阶段，每个团队都在建自己的agent框架
+- **意义**：类似前端框架2015-2018——最终会收敛，但当前百花齐放说明agent工程需求是真实的
+
+---
+
     50|    44|
     51|    45|---
     52|    46|
@@ -145,6 +163,7 @@
    140|   134|| 多模态Agent（GLM-5V） | 原生模型突破 | GUI操作能力——Agent可以"看"和"点" |
    141|   135|| Agent工作流自动编排 | 学术突破 | 让AI自己编排多Agent pipeline |
    142|   136|| Agent经验记忆（Experience-RAG） | 学术突破 | 技能可插拔——每次学习的经验可复用 |
+| Agent框架碎片化 | 🔥爆发期（#83发现5个新框架） | Context Gateway(上下文压缩)+Gambit(可靠性)值得关注——Agent工程进入战国时代 |
    143|   137|
    144|   138|## 八、小月的行动方向
    145|   139|
