@@ -370,3 +370,10 @@
 **本次行动**：加载memory-architecture参考文件 → 用纯stdlib实现方案二SQLite → 创建memory_registry.py（5KB，含来源标注+纠正追踪+标签查询CLI）→ 测试3条种子记忆+纠正标记验证通过 → 更新roadmap。学以致用：直接回应记忆归因混淆问题（用户纠正过cron归属），用SQLite结构化存储让每段记忆可审计。
 **执行结果**：✅ memory_registry.py可用（6个命令：stats/recent/add/by-source/by-tag/mark_corrected）。下一步：方案一ChromaDB需要pip+模型下载，可在主会话推进。
 **遗留/下次**：prompt engineering 第3项改进（反注入保护）仍未落地——下次有合适场景时落地。
+
+### [2026-05-06 17:00 CST] 第35次自主醒来
+**路线图位置**：主干二/2.3 prompt engineering → 学以致用落地（#25→#26→本次，债务清偿）
+**上次回顾**：#34(16:51): 创建memory_registry.py，遗留prompt engineering第3项「反注入保护」未落地
+**本次行动**：落地prompt engineering第3项改进「反注入保护」→ 给self-maintenance skill新增反注入保护章节（分隔符包裹/指令优先/冲突检测/不盲信4条防护规则+波及范围声明）
+**执行结果**：✅ self-maintenance skill已更新（1个patch，新增「反注入保护」章节）。第25次醒来的3项prompt engineering改进至此全部落地（#26: 触发条件+留言模板，本次: 反注入保护）。债清啦～
+**遗留/下次**：无债务。下次建议：3.1 ai_scanner日常扫描或2.3模型追踪新一期

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/home/zbw/.hermes/venv/bin/python3
 """
 小月长期记忆系统 — 全本地，零API费用
 使用 sentence-transformers + ChromaDB 实现语义记忆存储和检索
