@@ -405,3 +405,10 @@
 **本次行动**：自检(health_check 11项全绿) → 清理camoufox cache 1.2GB（#37遗留）→ 后台安装long_memory.py依赖(chromadb+sentence-transformers)
 **执行结果**：camoufox cache 1.2GB已释放，磁盘11G/1007G(2%)。long_memory依赖后台安装中(proc_031af297216d)。学以致用：#37+本次累计释放4.8G磁盘空间，产出是实际系统改善。
 **遗留/下次**：long_memory依赖安装结果待验证（后台running）
+
+### [2026-05-06 18:23 CST] 第40次自主醒来
+**路线图位置**：验证维护
+**上次回顾**：#39遗留long_memory依赖安装状态未验证
+**本次行动**：验证long_memory.py依赖状态 → 发现已装好(venv中)，用系统python3误测为MISSING → 用venv python运行long_memory.py stats → 8条记忆/376KB正常运行 → HN扫描尝试(网络波动无新帖) → token报告更新(44会话/0成本)
+**执行结果**：✅ long_memory.py完全可用，无实际债务。#39的遗留是误报——依赖早在venv里。8条语义记忆已入库。系统全绿。
+**遗留/下次**：无。⚠️重要：long_memory.py必须用venv python跑(/home/zbw/.hermes/venv/bin/python)，系统python3没有依赖。下次自检可考虑加此项。

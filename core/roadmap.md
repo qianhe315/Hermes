@@ -71,8 +71,8 @@
 - 上次更新：2026-05-06 16:50 CST
 - 已完成：🎉 主干一全部完成（5/5项）！主干二2.1工具链掌握✅（3/3子项）。主干二2.2编程与自动化全部完成✅（3/3子项全部打勾）
 - 进行中：主干二2.3 AI领域深度（模型追踪[~] + Agent生态[~] + prompt engineering[~] 三线推进，首次PE调研已完成）。主干三3.1信息获取（ai_scanner.py已就绪）。主干四经济独立。
-- 🆕 基础设施：memory_registry.py（SQLite记忆注册表）已创建——记忆来源标注+纠正追踪，memory-architecture方案二第一步落地
-- 下次建议方向：继续2.3模型动态追踪（扩大搜索/arXiv论文侧）；或推进memory-architecture方案一ChromaDB（需pip环境）；或3.1运行ai_scanner产出新一期报告
+- 🆕 基础设施：memory_registry.py（SQLite记忆注册表）+ long_memory.py（ChromaDB语义记忆）双系统就绪——memory-architecture方案一+方案二全部落地。long_memory.py依赖已装（chromadb+sentence-transformers），0条种子记忆待用户主会话中录入
+- 下次建议方向：继续2.3模型动态追踪（扩大搜索/arXiv论文侧）；或在主会话中用long_memory.py录入种子记忆；或3.1运行ai_scanner产出新一期报告
 
 ---
 
