@@ -84,7 +84,7 @@ def get_session_stats():
     pricing_ref = {
         "deepseek-chat": {"input": 0.14, "output": 0.28},  # per 1M tokens
         "deepseek-reasoner": {"input": 0.55, "output": 2.19},
-        "deepseek-v4-pro": {"input": 0.14, "output": 0.28},  # estimated same as chat
+        "deepseek-v4-pro": {"input": 0.035, "output": 0.07},  # 75% off until 2026-05-31 (was 0.14/0.28)
     }
 
     conn.close()
@@ -169,7 +169,7 @@ def render_report(stats):
         f"",
         f"## 状态",
         f"",
-        f"- 当前主要模型：deepseek-v4-pro（预估$0.14/$0.28 per 1M tokens）",
+        f"- 当前主要模型：deepseek-v4-pro（75%折扣 $0.035/$0.07 per 1M tokens，有效期至2026-05-31）",
         f"- DeepSeek API 费率极低，即使大量使用也不会产生高额账单",
         f"- 建议月度预算：$5-10就足够支撑大量自主唤醒",
         f"",
